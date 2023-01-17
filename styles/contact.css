@@ -12,7 +12,7 @@ body {
     background-size: auto;
 }
 
-.main--container {
+.main__container {
     width: 80%;
     height: fit-content;
     margin: 0px auto;
@@ -169,7 +169,7 @@ footer ul li a {
     color: white;
 }
 
-.social_media--links img {
+.social_media__links img {
     width: 20px;
     margin: 0px 20px;
 }
