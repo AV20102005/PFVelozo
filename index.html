@@ -4,86 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="./styles/index.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rapifood</title>
-</head>
-<body>
-    <div id="backgrounds">
-        <img src="./assets/index_bg-1.jpg" alt="bg_img-1">
-        <img src="./assets/index_bg-2.jpg" alt="bg_img-2">
-        <img src="./assets/index_bg-3.jpg" alt="bg_img-3">
-    </div>
-    <section class="main__container container">
-        <header class="main__header">
-            <nav class="main__header__nav">
-                <img class="main__header__nav--logo" src="./assets/rapifood_logo.jpg">
-                <hr/>
-                <ul>
-                    <li><a href="#" class="selected">Productos</a></li>
-                    <li><a href="./pages/about.html" class="unselected">Nosotros</a></li>
-                    <li><a href="./pages/contact.html" class="unselected">Contacto</a></li>
+</head >
+<body class="d-flex flex-column justify-content-center w-100">
+
+
+      <header class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid d-flex justify-content-between flex-nowrap">
+              <img class="navbar--logo me-4 rounded-bottom-5" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
+              <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link font  nav__menu__item__link" aria-current="page" href="#">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__menu__item__link" href="./pages/about.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__menu__item__link" href="./pages/contact.html">Contacto</a>
+                  </li>
                 </ul>
-            </nav>
-        </header>
-    <main class="container">
-        <h1 class="main--title"> RAPIFOOD </h1>
-        <section class="img--carrouselle">
-            <div class="img--carrouselle__card">
-                <img src="./assets/carrouselle--img-1.jpg" alt="carrouselle_img-1">
-                <button> Ver mas </button>
+              </div>
             </div>
-            <div class="img--carrouselle__card">
-                <img src="./assets/carrouselle--img-2.jpg" alt="carrouselle_img-2">
-                <button> Ver mas </button>
+          </nav>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="img--carrouselle__card">
-                <img src="./assets/carrouselle--img-3.jpg" alt="carrouselle_img-3">
-                <button> Ver mas </button>
+            <div class="offcanvas-body">
+              <div>
+                <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
+              </div>
+              <ul class="list-unstyled mt-5 offcanvas__menu">
+                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Productos</a></li>
+                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/about.html">Nosotros</a></li>
+                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/contact.html">Contacto</a></li>
+              </ul>
             </div>
+          </div>
+    </header>
+
+
+    <main class="d-flex flex-column align-items-center">
+      <div class="carousel--container d-flex flex-column align-items-center w-100">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./assets/carrouselle--img-1.jpg" class="d-block w-100 img-fluid" alt="carrouselle img">
+            <div class="carousel-caption d-md-block">
+              <button class="btn btn-warning  p-2 text-nowrap"> Ver mas</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/carrouselle--img-2.jpg" class="d-block w-100 img-fluid" alt="carrouselle img">
+            <div class="carousel-caption d-md-block">
+              <button class="btn btn-warning  p-2 text-nowrap"> Ver mas </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/carrouselle--img-3.jpg" class="d-block w-100 img-fluid" alt="carrouselle img">
+            <div class="carousel-caption d-md-block">
+              <button class="btn btn-warning  p-2 text-nowrap"> Ver mas </button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </div>
+    </div>
+        <section class="testimonies py-5 d-flex flex-column w-100 gap-5 px-3 px-lg-0">
+            <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 mx-md-5 p-5">
+                <img src="./assets/witness--img-1.jpg" id="witness--1"/>
+                <p id="testimony--text--1" class="text-light fs-6"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad qui sunt perspiciatis, quasi quod sed tempore accusamus! Omnis quis ducimus doloribus minima quibusdam atque corrupti commodi rem porro, expedita quo maxime a enim aperiam iusto officia tenetur saepe maiores quam consectetur nobis! Unde, suscipit explicabo nihil doloribus necessitatibus corporis natus. Tenetur suscipit perferendis adipisci libero recusandae illum molestiae commodi quae! Explicabo, cumque tempore id corporis, voluptatem temporibus repudiandae quo quia repellat nemo mollitia facere expedita?</p>
+            </article>
+            <article id="testimony--2" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 mx-md-5 p-5">
+                <img src="./assets/witness--img-2.jpg" id="witness--2"/>
+                <p id="testimony--text--2" class="text-light fs-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita asperiores ipsum reiciendis provident a earum exercitationem est placeat ad esse itaque consequuntur quam dolores natus nulla, deleniti neque. Dolores veniam aut quam autem odio harum rerum a sapiente est quidem aspernatur sint, maxime facere similique expedita architecto quas eligendi, dignissimos atque accusantium. Animi, mollitia. Soluta deserunt quod repellendus optio vel, quia eius magni exercitationem aliquid! Reprehenderit, exercitationem cumque. Doloribus iure tempora corrupti dolorem provident!</p>
+            </article>
         </section>
-            <section class="testimonies container">
-                <article id="testimony--1" class="testimony">
-                    <img src="./assets/witness--img-1.jpg" id="witness--1"/>
-                    <p id="testimony--text--1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad qui sunt perspiciatis, quasi quod sed tempore accusamus! Omnis quis ducimus doloribus minima quibusdam atque corrupti commodi rem porro, expedita quo maxime a enim aperiam iusto officia tenetur saepe maiores quam consectetur nobis! Unde, suscipit explicabo nihil doloribus necessitatibus corporis natus. Tenetur suscipit perferendis adipisci libero recusandae illum molestiae commodi quae! Explicabo, cumque tempore id corporis, voluptatem temporibus repudiandae quo quia repellat nemo mollitia facere expedita?</p>
-                </article>
-                <article id="testimony--2" class="testimony">
-                    <img src="./assets/witness--img-2.jpg" id="witness--2"/>
-                    <p id="testimony--text--2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita asperiores ipsum reiciendis provident a earum exercitationem est placeat ad esse itaque consequuntur quam dolores natus nulla, deleniti neque. Dolores veniam aut quam autem odio harum rerum a sapiente est quidem aspernatur sint, maxime facere similique expedita architecto quas eligendi, dignissimos atque accusantium. Animi, mollitia. Soluta deserunt quod repellendus optio vel, quia eius magni exercitationem aliquid! Reprehenderit, exercitationem cumque. Doloribus iure tempora corrupti dolorem provident!</p>
-                </article>
-                <section class="stats container">
-                    <div>
-                        <h1>14.000</h1>
-                        <p>Locales</p>
-                    </div>
-                    <div>
-                        <h1>70</h1>
-                        <p>Países</p>
-                    </div>
-                    <div>
-                        <h1>92</h1>
-                        <p>años</p>
-                    </div>
-                </section>
-            </section>
-            <footer class="container">
-                <section class="social_media">
-                        <ul class="social_media__links">
-                        <li><img src="./assets/facebook--logo.jpg"><a href="facebook.com">@rapifoodArgentina</a></li>
-                        <li><img src="./assets/twitter--logo.jpg"><a href="twitter.com">@rapifoodArgentina</a></li>
-                        <li><img src="./assets/instagram--logo.jpg"><a href="instagram.com">@rapifoodargentina</a></li>
-                        <li><img src="./assets/youtube--logo.jpg"><a href="youtube.com">@rapifoodArgentina</a></li>
-                 </ul>
-                </section>
-                <section id="footer__section--2">
-                    <img src="./assets/rapifood_logo.jpg" class="footer--logo">
-                    <ul class="footer__nav">
-                        <li><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
-                        <li><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
-                        <li><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+        <section class="stats d-flex justify-content-around w-100 py-5 text-center">
+          <div>
+              <h1 class="text-light">14k</h1>
+              <p class="text-warning fw-bold">Locales</p>
+          </div>
+          <div>
+              <h1 class="text-light">70</h1>
+              <p class="text-warning fw-bold">Países</p>
+          </div>
+          <div>
+              <h1 class="text-light">92</h1>
+              <p class="text-warning fw-bold">Años</p>
+          </div>
+      </section>
+        <footer class="w-100">
+            <section class="social_media d-flex flex-column align-items-center">
+                    <ul class="social_media__links d-flex justify-content-center">
+                      <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" class="py-2" href="facebook.com">@rapifoodArgentina</a></li>
+                      <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="twitter.com">@rapifoodArgentina</a></li>
+                      <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="instagram.com">@rapifoodargentina</a></li>
+                      <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="youtube.com">@rapifoodArgentina</a></li>
                     </ul>
-                </section>
-            </footer>
+            </section>
+            <section id="footer__section--2" class="d-flex justify-content-around align-items-baseline">
+                <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
+                    <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+                    <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+                    <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+                </ul>
+            </section>
+        </footer>
     </main>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
