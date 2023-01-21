@@ -15,7 +15,7 @@
       <header class="d-flex justify-content-center">
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid d-flex justify-content-between flex-nowrap">
-              <img class="navbar--logo me-4 rounded-bottom-5" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
+              <img class="navbar--logo me-4" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
               <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -85,15 +85,45 @@
           <span class="visually-hidden">Next</span>
       </div>
     </div>
-        <section class="testimonies py-5 d-flex flex-column w-100 gap-5 px-3 px-lg-0">
-            <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 mx-md-5 p-5">
-                <img src="./assets/witness--img-1.jpg" id="witness--1"/>
-                <p id="testimony--text--1" class="text-light fs-6"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad qui sunt perspiciatis, quasi quod sed tempore accusamus! Omnis quis ducimus doloribus minima quibusdam atque corrupti commodi rem porro, expedita quo maxime a enim aperiam iusto officia tenetur saepe maiores quam consectetur nobis! Unde, suscipit explicabo nihil doloribus necessitatibus corporis natus. Tenetur suscipit perferendis adipisci libero recusandae illum molestiae commodi quae! Explicabo, cumque tempore id corporis, voluptatem temporibus repudiandae quo quia repellat nemo mollitia facere expedita?</p>
-            </article>
-            <article id="testimony--2" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 mx-md-5 p-5">
-                <img src="./assets/witness--img-2.jpg" id="witness--2"/>
-                <p id="testimony--text--2" class="text-light fs-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita asperiores ipsum reiciendis provident a earum exercitationem est placeat ad esse itaque consequuntur quam dolores natus nulla, deleniti neque. Dolores veniam aut quam autem odio harum rerum a sapiente est quidem aspernatur sint, maxime facere similique expedita architecto quas eligendi, dignissimos atque accusantium. Animi, mollitia. Soluta deserunt quod repellendus optio vel, quia eius magni exercitationem aliquid! Reprehenderit, exercitationem cumque. Doloribus iure tempora corrupti dolorem provident!</p>
-            </article>
+    <section class="ubication px-5 py-5 w-100 d-flex flex-column flex-lg-row gap-5 justify-content-lg-around">
+      <section>
+        <h1 class="fs-1">Locales</h1>
+        <h2 class="my-4 fs-5">Encontra los locales mas cercanos a tu ubicacion</h2>
+        <input type="text" placeholder="Ciudad o direccion" class="input rounded-2 px-2 py-1 my-4">
+      </section>
+      <section class="d-none d-md-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5159378486927!2d-58.44036931857559!3d-34.60093723207207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674298206316!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      </section>
+        <section class="testimonies d-grid overflow-hidden py-5 gap-5">
+          <div class="row mx-auto">
+            <div class="col-12 col-md-6">
+                <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
+                    <img src="./assets/witness--img-1.jpg" class="rounded-circle" />
+                    <p  class="text-light fs-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod obcaecati et consequatur vitae ex est non voluptatibus tempora esse. </p>
+              </article>
+            </div>
+            <div class="col-12 d-none col-md-6 d-md-block">
+            <article id="testimony--2" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
+                <img src="./assets/witness--img-2.jpg" class="rounded-circle" />
+                <p  class="text-light fs-6"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo facilis suscipit at saepe rem eum nisi quasi laboriosam necessitatibus!</p>
+              </article>
+            </div>
+          </div>
+            <div class="row mx-auto">
+              <div class="col-12 col-md-6">
+              <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
+                  <img src="./assets/witness--img-3.jpg" class="rounded-circle" />
+                  <p  class="text-light fs-6"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, numquam repellat? Facere quam eos voluptas explicabo blanditiis reprehenderit necessitatibus ratione?</p>
+              </article>
+            </div>
+            <div class="col-12 d-none col-md-6 d-md-block">
+              <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
+                <img src="./assets/witness--img-4.jpg" class="rounded-circle" />
+                <p class="text-light fs-6"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ut rem veniam odio blanditiis dolorem iure delectus aut perspiciatis esse.</p>
+              </article>
+            </div>
+            </div>
         </section>
         <section class="stats d-flex justify-content-around w-100 py-5 text-center">
           <div>
@@ -112,13 +142,19 @@
         <footer class="w-100">
             <section class="social_media d-flex flex-column align-items-center">
                     <ul class="social_media__links d-flex justify-content-center">
-                      <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" class="py-2" href="facebook.com">@rapifoodArgentina</a></li>
+                      <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="facebook.com">@rapifoodArgentina</a></li>
                       <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="twitter.com">@rapifoodArgentina</a></li>
                       <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="instagram.com">@rapifoodargentina</a></li>
                       <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="youtube.com">@rapifoodArgentina</a></li>
                     </ul>
             </section>
-            <section id="footer__section--2" class="d-flex justify-content-around align-items-baseline">
+            <hr class="w-75 text-white mx-auto py-2">
+            <section class="download d-flex align-items-center justify-content-around">
+              <img src="./assets/availableontheappstore.png">
+              <img src="./assets/downloadggleplay.png">
+            </section>
+            <hr class="w-75 text-white mx-auto py-2">
+            <section class="d-flex justify-content-around align-items-baseline">
                 <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
                     <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
                     <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
