@@ -2,32 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-    background-image: url('../assets/index_bg-1.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
-.main__container {
-    width: 80%;
     height: fit-content;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: white;
+    width: fit-content;
+    background-image: url('../assets/body-bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
 }
 
-.container {
-    margin-top: 100px;
+ul {
+    list-style: none;
+    padding-left: 0px;
 }
 
 
-/* ---------------------------------------NAV-------------------------------*/
+
+/* -------------------------------NAV-------------------------------*/
+
 
 header .navbar {
     background-color: crimson;
@@ -49,120 +44,78 @@ header .navbar {
     border-bottom: 2px solid black;
 }
 
-/* -------------------------------- MAIN ----------------------------------- */
-
-main {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 100px
+.nvbar--social_media__links {
+ padding-left: 0px;
 }
 
-.main__title {
-    font-size: 75px;
-}
+/* -------------------------------MAIN-------------------------------*/
 
 .card {
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.172);
+    height: fit-content;
+
 }
 
-.card button {
-    margin-top: 20px;
-    padding: 3px 30px;
-    background-color: rgb(197, 0, 0);
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.287);
-    border-radius: 5px;
-    font-weight: lighter;
-    color: white;
-}
-
-.card button:hover {
-    background-color: rgb(129, 0, 0)
-}
-
-.main__card {
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.main--main__img {
-    width: 70%;
-}
-
-.card__group {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-}
-
-.card__group .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-    height: 400px;
-    width: 100%;
-}
-
-.card__group img {
-    width: 100%;
-    height: 200px;
-}
-
-
-/* --------------------------------FOOTER---------------------------*/
+/* -------------------------------FOOTER-------------------------------*/
 
 footer {
-    background-color: rgb(141, 13, 38);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    font-weight: lighter;
-    padding: 20px;
+    background-color: darkred;
 }
 
-footer ul {
-    list-style: none;
+
+.footer__nav {
+    padding-left: 0px;
 }
 
-footer ul li{
-    padding: 5px 10px;
+.download img {
+    width: 20%;
 }
 
-footer ul li a {
-    text-decoration: none;
-    color: white;
+@media all and (max-width:992px) {
+    .testimonies {
+        background-image: url('../assets/testimonies-mxwdthlg--bg.jpg');
+        background-attachment: fixed;
+    }
 }
 
-.social_media__links img {
-    width: 20px;
-    margin: 0px 20px;
+@media all and (min-width: 992px) {
+
+    .carousel {
+        width: 75%;
+    }
+
+    .testimony img {
+        width: 25%;
+    }
+
+    .download img {
+        width: 10%;
+    }
+
+    .main--card__image {
+        width:100%;
+        height: 50em;
+    }
+
+    .card--group {
+        width: 80%;
+    }
+    
 }
 
-.footer--logo {
-    width: 100px;
-    border-radius: 100%;
-    margin-left: 80%;
+@media all and (max-width: 1200px) {
+    .social_media__links {
+        padding-left: 0px; 
+    }
+
+    .social_media__links li i {
+        font-size: 25px
+    }
 }
 
-.footer__nav li {
-    display: inline-block;
+@media all and (max-width:762px) {
+
+    .download img {
+        width: 30%;
+    }
 }
 
-#footer__section--2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 50px;
-}

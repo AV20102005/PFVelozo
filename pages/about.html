@@ -1,102 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="./styles/index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../styles/about.css">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="./styles/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/about.css">
+  <title>About</title>
 </head>
-<body>
-    <section class="main__container">
-        <header class="d-flex justify-content-center mt-4">
-            <nav class="navbar navbar-expand-lg w-75">
-                <div class="container-fluid d-flex justify-content-between flex-nowrap">
-                  <img class="navbar--logo me-4 rounded-end" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link nav__menu__item__link" href="#">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link nav__menu__item__link" href="./contact.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div>
-                    <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
-                  </div>
-                  <ul class="list-unstyled mt-5 offcanvas__menu">
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="../index.html">Productos</a></li>
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Nosotros</a></li>
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./contact.html">Contacto</a></li>
-                  </ul>
-                </div>
+
+<body class="d-flex flex-column justify-content-center w-100">
+  <header class="d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid d-flex justify-content-between flex-nowrap">
+        <img class="navbar--logo me-4" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
+        <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
+        </div>
+        <ul class="mt-5 offcanvas__menu">
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Productos</a></li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/about.html">Nosotros</a>
+          </li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5"
+              href="./pages/contact.html">Contacto</a></li>
+        </ul>
+        <ul class="nvbar--social_media__links mt-5  d-flex gap-4">
+          <li></li><a href=""><i class="fa-brands fa-facebook pe-xl-3 fs-1 text-dark"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter  pe-xl-3 fs-1 text-dark"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram pe-xl-3 fs-1 text-dark"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube pe-xl-3 fs-1 text-dark"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="d-flex flex-column align-items-center">
+    <section class="card--group px-3 p-lg-5">
+      <div class="card my-2">
+        <img src="../assets/restaurant__img.jpg" class="card-img-top main--card__image" alt="main card image">
+        <div class="card-body text-center">
+          <p class="fs-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quidem voluptatum, dolorem
+            architecto aspernatur distinctio porro neque perferendis minima odio in sed alias ab provident deserunt?
+            Quasi dolores fugit officiis?</p>
+        </div>
+        <button class="btn btn-warning w-25 mx-auto my-3">Ver mas</button>
+      </div>
+      <section class="d-grid gap-4 my-5">
+        <div class="row gap-4 gap-lg-0">
+          <div class="col col-12 col-lg-6">
+            <div class="card w-100 h-100">
+              <img src="../assets/about_img--1.jpg" class="card-img-top img-fluid">
+              <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quam eveniet esse suscipit. Eos
+                  nisi suscipit expedita sed nihil saepe?</p>
               </div>
-        </header>
-        <main class="container">
-            <h1 class="main__title"> NOSOTROS </h1>
-            <div class="main__card container card">
-                <img src="../assets/restaurant__img.jpg" class="main--main__img" alt="main card image">
-                <h2 class="main__card__text "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quidem voluptatum, dolorem architecto aspernatur distinctio porro neque perferendis minima odio in sed alias ab provident deserunt? Quasi dolores fugit officiis?</h2>
+              <button class="btn btn-warning w-25 mx-auto my-3">Ver mas</button>
             </div>
-            <section class="card__group container">
-                <div class="card">
-                    <img src="../assets/about_img--1.jpg" alt="card image 1">
-                    <h1>Lorem, ipsum.</h1>
-                    <button>Ver más</button>
-                </div>
-                <div class="card">
-                    <img src="../assets/about_img--2.jpg" alt="card image 2">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                    <button>Ver más</button>
-                </div>
-                <div class="card">
-                    <img src="../assets/about_img--3.jpg" alt="card image 3">
-                    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                    <button>Ver más</button>
-                </div>
-                <div class="card">
-                    <img src="../assets/about_img--4.jng" alt="card image 4">
-                    <h1>Lorem ipsum dolor sit.</h1>
-                    <button>Ver más</button>
-            </section>
-        </main>
-        <footer class="container">
-            <section class="social_media">
-                    <ul class="social_media__links">
-                    <li><img src="../assets/facebook--logo.jpg"><a href="facebook.com" alt="facebook link">@rapifoodArgentina</a></li>
-                    <li><img src="../assets/twitter--logo.jpg"><a href="twitter.com" alt="twitter link">@rapifoodArgentina</a></li>
-                    <li><img src="../assets/instagram--logo.jpg"><a href="instagram.com" alt="instagram link">@rapifoodargentina</a></li>
-                    <li><img src="../assets/youtube--logo.jpg"><a href="youtube.com" alt="youtube link">@rapifoodArgentina</a></li>
-             </ul>
-            </section>
-            <section id="footer__section--2">
-                <img src="../assets/rapifood_logo.jpg" class="footer--logo">
-                <ul class="footer__nav">
-                    <li><a href="../pages/privacypolitics.html">Politica de privacidad</a></li>
-                    <li><a href="../pages/consumerdefense.html">Defensa del consumidor</a></li>
-                    <li><a href="../pages/personaldataprotec.html">Protección de datos personales</a></li>
-                </ul>
-            </section>
-        </footer>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="card w-100 h-100">
+              <img src="../assets/about_img--2.jpg" class="card-img-top img-fluid" alt="card image 2">
+              <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quam eveniet esse suscipit. Eos
+                  nisi suscipit expedita sed nihil saepe?</p>
+              </div>
+              <button class="btn btn-warning w-25 mx-auto my-3">Ver mas</button>
+            </div>
+          </div>
+        </div>
+        <div class="row gap-4 gap-lg-0">
+          <div class="col-12 col-lg-6">
+            <div class="card h-100">
+              <img src="../assets/about_img--3.jpg" class="card-img-top img-fluid" alt="card image 3">
+              <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quam eveniet esse suscipit. Eos
+                  nisi suscipit expedita sed nihil saepe?</p>
+              </div>
+              <button class="btn btn-warning w-25 mx-auto my-3">Ver mas</button>
+            </div>
+          </div>
+          <div class="col col-lg-6">
+            <div class="card h-100">
+              <img src="../assets/about_img--4.jpg" class="card-img-top img-fluid" alt="card image 4">
+              <div class="card-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quam eveniet esse suscipit. Eos
+                  nisi suscipit expedita sed nihil saepe?</p>
+              </div>
+              <button class="btn btn-warning w-25 mx-auto my-3">Ver mas</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+  </main>
+  <footer class="w-100">
+    <section class="social_media d-flex flex-column align-items-center">
+      <ul class="social_media__links d-flex justify-content-center">
+        <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="facebook.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="twitter.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="instagram.com">@rapifoodargentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="youtube.com">@rapifoodArgentina</a></li>
+      </ul>
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <section class="download d-flex align-items-center justify-content-around">
+      <img src="../assets/availableontheappstore.png" alt="IOS download"">
+            <img src=" ../assets/downloadggleplay.png" alt="Android download">
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <section class="d-flex justify-content-around align-items-baseline">
+      <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
+        <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+      </ul>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

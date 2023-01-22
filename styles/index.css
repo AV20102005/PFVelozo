@@ -19,7 +19,7 @@ ul {
     padding-left: 0px;
 }
 
-/* ---------------------------------------NAV-------------------------------*/
+/* -------------------------------NAV-------------------------------*/
 
 
 header .navbar {
@@ -42,7 +42,11 @@ header .navbar {
     border-bottom: 2px solid black;
 }
 
-/* -------------------------------- MAIN ----------------------------------- */
+.nvbar--social_media__links {
+ padding-left: 0px;
+}
+
+/* -------------------------------MAIN-------------------------------*/
 
 main {
     background-image: url('../assets/index_bg-3.jpg');
@@ -63,12 +67,15 @@ main {
 }
 
 .testimonies {
-    background-color: coral;
+    background-color: white;
 }
 
 .testimony {
-    background-color:darksalmon;
-    border: 1px solid black;
+    color: black;
+}
+
+.testimony p {
+    color: black;
 }
 
 
@@ -82,15 +89,8 @@ main {
     background-color: darkred;
 }
 
-.stats div h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
-.stats div p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* --------------------------------FOOTER---------------------------*/
+/* -------------------------------FOOTER-------------------------------*/
 
 footer {
     background-color: darkred;

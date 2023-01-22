@@ -1,60 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="./styles/index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Rapifood</title>
-</head >
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="./styles/index.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Rapifood</title>
+</head>
+
 <body class="d-flex flex-column justify-content-center w-100">
-
-
-      <header class="d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg w-100">
-            <div class="container-fluid d-flex justify-content-between flex-nowrap">
-              <img class="navbar--logo me-4" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
-              <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link font  nav__menu__item__link" aria-current="page" href="#">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav__menu__item__link" href="./pages/about.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav__menu__item__link" href="./pages/contact.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div>
-                <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
-              </div>
-              <ul class="list-unstyled mt-5 offcanvas__menu">
-                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Productos</a></li>
-                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/about.html">Nosotros</a></li>
-                <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/contact.html">Contacto</a></li>
-              </ul>
-            </div>
-          </div>
-    </header>
-
-
-    <main class="d-flex flex-column align-items-center">
-      <div class="carousel--container d-flex flex-column align-items-center w-100">
+  <header class="d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid d-flex justify-content-between flex-nowrap">
+        <img class="navbar--logo me-4" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
+        <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link font  nav__menu__item__link" aria-current="page" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="./pages/about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="./pages/contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
+        </div>
+        <ul class="mt-5 offcanvas__menu">
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Productos</a></li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./pages/about.html">Nosotros</a>
+          </li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5"
+              href="./pages/contact.html">Contacto</a></li>
+        </ul>
+        <ul class="nvbar--social_media__links mt-5  d-flex gap-4">
+          <li></li><a href=""><i
+            class="fa-brands fa-facebook pe-xl-3 fs-1 text-dark"></i></a></li>
+            <li><a href=""><i
+            class="fa-brands fa-twitter  pe-xl-3 fs-1 text-dark"></i></a></li>
+            <li><a href=""><i
+            class="fa-brands fa-instagram pe-xl-3 fs-1 text-dark"></i></a></li>
+            <li><a href=""><i
+            class="fa-brands fa-youtube pe-xl-3 fs-1 text-dark"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="d-flex flex-column align-items-center">
+    <div class="carousel--container d-flex flex-column align-items-center w-100">
       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
@@ -88,81 +101,99 @@
     <section class="ubication px-5 py-5 w-100 d-flex flex-column flex-lg-row gap-5 justify-content-lg-around">
       <section>
         <h1 class="fs-1">Locales</h1>
-        <h2 class="my-4 fs-5">Encontra los locales mas cercanos a tu ubicacion</h2>
+        <h2 class="my-4 fs-5">Encontrá los locales más cercanos a tu ubicación</h2>
         <input type="text" placeholder="Ciudad o direccion" class="input rounded-2 px-2 py-1 my-4">
       </section>
       <section class="d-none d-md-block">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5159378486927!2d-58.44036931857559!3d-34.60093723207207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674298206316!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5159378486927!2d-58.44036931857559!3d-34.60093723207207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674298206316!5m2!1ses!2sar"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+    </section>
+    <section class="testimonies d-grid overflow-hidden py-5 gap-5 px-xl-5">
+      <div class="row mx-auto px-xl-5">
+        <div class="col-12 col-md-6">
+          <article id="testimony--1"class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 bg-info  p-4 ms-xl-5">
+            <img src="./assets/witness--img-1.jpg" alt="img--witness--1" class="rounded-circle" />
+            <p class="text-dark fs-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod obcaecati et
+              consequatur vitae ex est non voluptatibus tempora esse. </p>
+          </article>
+        </div>
+        <div class="col-12 d-none col-md-6 d-md-block">
+          <article id="testimony--2" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 bg-info  p-4 me-xl-5">
+            <img src="./assets/witness--img-2.jpg" alt="img--witness--2" class="rounded-circle" />
+            <p class="text-dark fs-6"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo facilis
+              suscipit at saepe rem eum nisi quasi laboriosam necessitatibus!</p>
+          </article>
+        </div>
+      </div>
+      <div class="row mx-auto px-xl-5">
+        <div class="col-12 col-md-6">
+          <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 bg-info ms-xl-5">
+            <img src="./assets/witness--img-3.jpg" alt="img--witness--3" class="rounded-circle" />
+            <p class="text-dark fs-6"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, numquam
+              repellat? Facere quam eos voluptas explicabo blanditiis reprehenderit necessitatibus ratione?</p>
+          </article>
+        </div>
+        <div class="col-12 d-none col-md-6 d-md-block">
+          <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 bg-info  p-4 me-xl-5">
+            <img src="./assets/witness--img-4.jpg" alt="img--witness--4" class="rounded-circle" />
+            <p class="text-dark fs-6"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ut rem veniam
+              odio blanditiis dolorem iure delectus aut perspiciatis esse.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="stats d-flex justify-content-around w-100 py-5 text-center">
+      <div>
+        <h1 class="text-light">14k</h1>
+        <p class="text-warning fw-bold">Locales</p>
+      </div>
+      <div>
+        <h1 class="text-light">70</h1>
+        <p class="text-warning fw-bold">Países</p>
+      </div>
+      <div>
+        <h1 class="text-light">92</h1>
+        <p class="text-warning fw-bold">Años</p>
+      </div>
+    </section>
+    <footer class="w-100">
+      <section class="social_media d-flex flex-column align-items-center">
+        <ul class="social_media__links d-flex justify-content-center">
+          <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+              class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+              href="facebook.com">@rapifoodArgentina</a></li>
+          <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+              class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+              href="twitter.com">@rapifoodArgentina</a></li>
+          <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+              class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+              href="instagram.com">@rapifoodargentina</a></li>
+          <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+              class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+              href="youtube.com">@rapifoodArgentina</a></li>
+        </ul>
       </section>
-        <section class="testimonies d-grid overflow-hidden py-5 gap-5">
-          <div class="row mx-auto">
-            <div class="col-12 col-md-6">
-                <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
-                    <img src="./assets/witness--img-1.jpg" class="rounded-circle" />
-                    <p  class="text-light fs-6"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod obcaecati et consequatur vitae ex est non voluptatibus tempora esse. </p>
-              </article>
-            </div>
-            <div class="col-12 d-none col-md-6 d-md-block">
-            <article id="testimony--2" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
-                <img src="./assets/witness--img-2.jpg" class="rounded-circle" />
-                <p  class="text-light fs-6"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque illo facilis suscipit at saepe rem eum nisi quasi laboriosam necessitatibus!</p>
-              </article>
-            </div>
-          </div>
-            <div class="row mx-auto">
-              <div class="col-12 col-md-6">
-              <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
-                  <img src="./assets/witness--img-3.jpg" class="rounded-circle" />
-                  <p  class="text-light fs-6"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, numquam repellat? Facere quam eos voluptas explicabo blanditiis reprehenderit necessitatibus ratione?</p>
-              </article>
-            </div>
-            <div class="col-12 d-none col-md-6 d-md-block">
-              <article id="testimony--1" class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5  p-4">
-                <img src="./assets/witness--img-4.jpg" class="rounded-circle" />
-                <p class="text-light fs-6"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ut rem veniam odio blanditiis dolorem iure delectus aut perspiciatis esse.</p>
-              </article>
-            </div>
-            </div>
-        </section>
-        <section class="stats d-flex justify-content-around w-100 py-5 text-center">
-          <div>
-              <h1 class="text-light">14k</h1>
-              <p class="text-warning fw-bold">Locales</p>
-          </div>
-          <div>
-              <h1 class="text-light">70</h1>
-              <p class="text-warning fw-bold">Países</p>
-          </div>
-          <div>
-              <h1 class="text-light">92</h1>
-              <p class="text-warning fw-bold">Años</p>
-          </div>
+      <hr class="w-75 text-white mx-auto py-2">
+      <section class="download d-flex align-items-center justify-content-around">
+        <img src="./assets/availableontheappstore.png" alt="IOS download"">
+              <img src=" ./assets/downloadggleplay.png" alt="Android download">
       </section>
-        <footer class="w-100">
-            <section class="social_media d-flex flex-column align-items-center">
-                    <ul class="social_media__links d-flex justify-content-center">
-                      <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="facebook.com">@rapifoodArgentina</a></li>
-                      <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="twitter.com">@rapifoodArgentina</a></li>
-                      <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="instagram.com">@rapifoodargentina</a></li>
-                      <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block" href="youtube.com">@rapifoodArgentina</a></li>
-                    </ul>
-            </section>
-            <hr class="w-75 text-white mx-auto py-2">
-            <section class="download d-flex align-items-center justify-content-around">
-              <img src="./assets/availableontheappstore.png">
-              <img src="./assets/downloadggleplay.png">
-            </section>
-            <hr class="w-75 text-white mx-auto py-2">
-            <section class="d-flex justify-content-around align-items-baseline">
-                <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
-                    <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
-                    <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
-                    <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
-                </ul>
-            </section>
-        </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <hr class="w-75 text-white mx-auto py-2">
+      <section class="d-flex justify-content-around align-items-baseline">
+        <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
+          <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+          <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+          <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+        </ul>
+      </section>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
