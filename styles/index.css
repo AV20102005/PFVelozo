@@ -54,7 +54,7 @@ main {
 }
 
 .carousel {
-    min-width: 300px;
+    min-width: 275px;
     transition: 1s all;
 }
 
@@ -132,6 +132,12 @@ footer {
 
     .social_media__links li i {
         font-size: 25px
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .testimonies{
+        width: 80%;
     }
 }
 
