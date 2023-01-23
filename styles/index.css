@@ -66,6 +66,10 @@ main {
     background-color:indianred;
 }
 
+.testimonies--container {
+    background-color: white;
+}
+
 .testimonies {
     background-color: white;
 }
@@ -103,13 +107,6 @@ footer {
 
 .download img {
     width: 20%;
-}
-
-@media all and (max-width:992px) {
-    .testimonies {
-        background-image: url('../assets/testimonies-mxwdthlg--bg.jpg');
-        background-attachment: fixed;
-    }
 }
 
 @media all and (min-width: 992px) {
