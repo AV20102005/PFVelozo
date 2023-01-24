@@ -54,7 +54,7 @@ main {
 }
 
 .carousel {
-    min-width: 275px;
+    min-width: 500px;
     transition: 1s all;
 }
 
