@@ -25,7 +25,7 @@ ul {
 
 
 header .navbar {
-    background-color: crimson;
+    background-color:tomato;
 }
 
 .nav__menu__item__link {
@@ -58,7 +58,7 @@ header .navbar {
 /* -------------------------------FOOTER-------------------------------*/
 
 footer {
-    background-color: darkred;
+    background-color:maroon;
 }
 
 
