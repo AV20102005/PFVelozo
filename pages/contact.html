@@ -1,131 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="./styles/index.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../styles/contact.css">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- BOOTSTRAP  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- FONT-AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="../styles/contact.css">
+  <title>Contact</title>
 </head>
-<body>
-    <section class="main__container">
-        <header class="d-flex justify-content-center mt-4">
-            <nav class="navbar navbar-expand-lg w-75">
-                <div class="container-fluid d-flex justify-content-between flex-nowrap">
-                  <img class="navbar--logo me-4 rounded-end" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link nav__menu__item__link" href="./about.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link nav__menu__item__link" href="#">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div>
-                    <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
-                  </div>
-                  <ul class="list-unstyled mt-5 offcanvas__menu">
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="../index.html">Productos</a></li>
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./about.html">Nosotros</a></li>
-                    <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Contacto</a></li>
-                  </ul>
-                </div>
-              </div>
-        </header>
-        <main>
-            <h1 class="main__title"> CONTACTO </h1>
-            <section class="advise">
-                <h2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ab atque dicta perspiciatis explicabo unde doloremque id quae voluptates recusandae?</h2>
-            </section>
-        <section class="form__container container">
-            <form>
-                <section>
-                    <label for="name"><h1>Nombre</h1></label>
-                    <input type="text" id="name">
-                </section>
-                <section>
-                    <label for="surname"><h1>Apellido</h1></label>
-                    <input type="text" id="surname">
-                </section>
-                <section>
-                    <label for="email"><h1>Correo</h1></label>
-                    <input type="text" id="email">
-                </section>
-                <section>
-                    <label for="number"><h1>Telefono</h1></label>
-                    <input type="text" id="number">
-                </section>
-                <section>
-                    <label for="city"><h1>Ciudad</h1></label>
-                    <input type="text" id="city">
-                </section>  
-                <section>
-                    <label for="concern"><h1>Aasunto</h1></label>
-                    <select id="concern">
-                        <option>Mensaje</option>
-                        <option>Crítica</option>
-                        <option>Elogio</option>
-                        <option>Datos personales</option>
-                        <option>Consulta</option>
-                        <option>Sugerencia</option>
-                        <option>Otros...</option>
-                </select>
-                </section>
-                <section>
-                    <label for="message"><h1>Mensaje</h1></label>
-                    <input type="text" id="message">
-                </section>
-                <section class="radio__input">
-                    <label for="radio--1"><h1>Acepto recibir información sobre las novedades y promociones de Rapifood</h1></label>
-                    <input type="radio" id="radio--1">
-                </section>
-                <section class="radio__input">
-                    <label for="radio--2"><h1>Acepto la Política de Privacidad</h1></label>
-                    <input type="radio" id="radio--2">
-                </section>
-                <section class="submit__input">
-                <input type="submit" value="Enviar" class="form--submit__btn">
-                </section>
-            </form>
-        </section>
-        </main>
-        <footer class="container">
-            <section class="social_media">
-                    <ul class="social_media__links">
-                    <li><img src="../assets/facebook--logo.jpg" alt="facebook link"><a href="facebook.com">@rapifoodArgentina</a></li>
-                    <li><img src="../assets/twitter--logo.jpg" alt="twitter link"><a href="twitter.com">@rapifoodArgentina</a></li>
-                    <li><img src="../assets/instagram--logo.jpg" alt="instagram link"><a href="instagram.com">@rapifoodargentina</a></li>
-                    <li><img src="../assets/youtube--logo.jpg" alt="youtube link"><a href="youtube.com">@rapifoodArgentina</a></li>
-             </ul>
-            </section>
-            <section id="footer__section--2">
-                <img src="../assets/rapifood_logo.jpg" class="footer--logo" alt="footer logo">
-                <ul class="footer__nav">
-                    <li><a href="../pages/privacypolitics.html">Politica de privacidad</a></li>
-                    <li><a href="../pages/consumerdefense.html">Defensa del consumidor</a></li>
-                    <li><a href="../pages/personaldataprotec.html">Protección de datos personales</a></li>
-                </ul>
-            </section>
-        </footer>
+
+<body class="d-flex flex-column justify-content-center w-100">
+  <header class="d-flex justify-content-center">
+    <nav class="navbar navbar-expand-lg w-100">
+      <div class="container-fluid d-flex justify-content-between flex-nowrap">
+        <img class="navbar--logo me-4" src="../assets/rapifood_logo.jpg" alt="Bootstrap">
+        <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="./about.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__menu__item__link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <img src="../assets/rapifood_logo.jpg" class="offcanvas--logo">
+        </div>
+        <ul class="mt-5 offcanvas__menu">
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current"
+              href="../index.html">Productos</a></li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./about.html">Nosotros</a>
+          </li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="#">Contacto</a></li>
+        </ul>
+        <ul class="nvbar--social_media__links mt-5  d-flex gap-4">
+          <li></li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook pe-xl-3 fs-1 text-dark"></i></a>
+          </li>
+          <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter  pe-xl-3 fs-1 text-dark"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram pe-xl-3 fs-1 text-dark"></i></a></li>
+          <li><a href="https://www.youtube.com"><i class="fa-brands fa-youtube pe-xl-3 fs-1 text-dark"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="d-flex flex-column align-items-center p-1 p-sm-5">
+    <h1 class="main__title my-5 my-sm-5"> CONTACTO </h1>
+    <section class="advise w-50 text-center my-0 my-lg-4">
+      <h2 class="fs-5"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ab atque dicta perspiciatis
+        explicabo
+        unde doloremque id quae voluptates recusandae</h2>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <form class="form--container bg-light my-3 my-lg-5 p-2 p-sm-5">
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control form-control-plaintext border-bottom" id="floatingInputGroup1"
+            placeholder="Name" required>
+          <label for="floatingInputGroup1" aria-valuemin="3">Nombre</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control form-control-plaintext border-bottom" id="floatingInputGroup2"
+            placeholder="Surname" required aria-valuemin="3">
+          <label for="floatingInputGroup2">Apellido</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="email" class="form-control form-control-plaintext border-bottom" id="floatingInputGroup3"
+            placeholder="Email" required>
+          <label for="floatingInputGroup3">Email</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control form-control-plaintext border-bottom" id="floatingInputGroup4"
+            placeholder="telephone number" required aria-valuemin="10" aria-valuemax="15">
+          <label for="floatingInputGroup4">Teléfono</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control form-control-plaintext border-bottom" id="floatingInputGroup5"
+            placeholder="City" required>
+          <label for="floatingInputGroup5">Ciudad</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <select type="text" class="form-control form-control-plaintext border-bottom form-select"
+            id="floatingInputGroup6" placeholder="Username" required>
+            <option selected>Crítica</option>
+            <option value="1">Reclamo</option>
+            <option value="2">Consulta</option>
+            <option value="3">Suegerencia</option>
+          </select>
+          <label for="floatingInputGroup6">Asunto</label>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <div class="form-floating">
+          <textarea class="form-text form-control" required></textarea>
+          <label for="floatingInputGroup7" aria-valuemin="20" aria-valuemax="100">Mensaje</label>
+        </div>
+      </div>
+      <div class="form-check mt-5">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          Acepto recibir información sobre las novedades y promociones.
+        </label>
+      </div>
+      <div class="form-check my-3">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+        <label class="form-check-label" for="flexCheckChecked">
+          Acepto la <a href="#">Política de Privacidad</a>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-danger mb-3 my-3">Enviar</button>
+    </form>
+  </main>
+  <footer class="w-100">
+    <section class="social_media d-flex flex-column align-items-center">
+      <ul class="social_media__links d-flex justify-content-center">
+        <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="https://www.facebook.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="https://www.twitter.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="https://www.instagram.com">@rapifoodargentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="https://www.youtube.com">@rapifoodArgentina</a></li>
+      </ul>
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <section class="download d-flex align-items-center justify-content-around">
+      <img src="../assets/availableontheappstore.png" alt="IOS download">
+      <img src=" ../assets/downloadggleplay.png" alt="Android download">
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <section class="d-flex justify-content-around align-items-baseline">
+      <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
+        <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+      </ul>
+    </section>
+  </footer>
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
