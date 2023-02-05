@@ -15,7 +15,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CUSTOM STYLES -->
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- ICON -->
+  <link rel="shortcut icon" href="./assets/rapifood_logo.png">
 
   <title>Rapifood</title>
 </head>
@@ -24,7 +27,7 @@
   <header class="d-flex justify-content-center">
     <nav class="navbar navbar-expand-lg w-100 position-fixed z-3">
       <div class="container-fluid d-flex justify-content-between flex-nowrap">
-        <img class="navbar--logo me-4" src="./assets/rapifood_logo.png" alt="Bootstrap">
+        <a href="#"><img class="navbar--logo me-4" src="./assets/rapifood_logo.png" alt="Bootstrap"></a>
         <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
@@ -68,157 +71,164 @@
       </div>
     </div>
   </header>
-  <main class="d-flex flex-column align-items-center">
-    <div class="carousel--container d-flex flex-column align-items-center w-100 mt-5 m-xl-0 overflow-hidden">
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./assets/carousel--img-1.jpg" class="d-block w-100 img-fluid" alt="carousel img">
-            <div class="carousel-caption d-md-block">
-              <button class="btn btn-warning  p-2 text-nowrap"> Ver más</button>
+  <main>
+    <div class="main__content d-flex flex-column align-items-center">
+      <div class="carousel--container d-flex flex-column align-items-center w-100 mt-5 m-xl-0 overflow-hidden">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="./assets/carousel--img-1.jpg" class="d-block w-100 img-fluid" alt="carousel img">
+              <div class="carousel-caption d-md-block">
+                <h1 class="my-3">BIG RAPI</h1>
+                <button class="btn btn-warning  p-2 text-nowrap"> Ver más</button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="./assets/carousel--img-2.jpg" class="d-block w-100 img-fluid" alt="carousel img">
+              <div class="carousel-caption d-md-block">
+                <h1 class="my-3">¡AHORA TAMBIÉN VENDEMOS PIZZAS!</h1>
+                <button class="btn btn-warning  p-2 text-nowrap"> Ver más </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="./assets/carousel--img-3.jpg" class="d-block w-100 img-fluid" alt="carousel img">
+              <div class="carousel-caption d-md-block">
+                <h1 class="my-3">COMBO RAPI-DÍSIMO</h1>
+                <button class="btn btn-warning  p-2 text-nowrap"> Ver más </button>
+              </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./assets/carousel--img-2.jpg" class="d-block w-100 img-fluid" alt="carousel img">
-            <div class="carousel-caption d-md-block">
-              <button class="btn btn-warning  p-2 text-nowrap"> Ver más </button>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./assets/carousel--img-3.jpg" class="d-block w-100 img-fluid" alt="carousel img">
-            <div class="carousel-caption d-md-block">
-              <button class="btn btn-warning  p-2 text-nowrap"> Ver más </button>
-            </div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
       </div>
+      <section class="ubication px-3 px-sm-5 py-5 w-100 d-flex flex-column flex-lg-row gap-4 justify-content-lg-around">
+        <section class="text-center text-lg-start">
+          <h2 class="h1 text-warning fw-bold">Locales</h3>
+            <h3 class="my-4 fs-5">Encontrá los locales más cercanos a tu ubicación
+          </h2>
+          <input type="text" placeholder="Ciudad o dirección"
+            class="input rounded-2 border-0 bg-warning-subtle w-50 px-2 py-3 my-4">
+        </section>
+        <section class="d-none d-md-block mx-auto mx-lg-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5159378486927!2d-58.44036931857559!3d-34.60093723207207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674298206316!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      </section>
+      <section class="testimonies--container px-3 px-sm-5">
+        <section class="testimonies d-grid overflow-hidden py-5 gap-5 mx-auto">
+          <div class="row mx-auto ">
+            <div class="col-12 col-md-6">
+              <article id="testimony--1"
+                class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 h-100">
+                <img src="./assets/witness--img-1.jpg" alt="img--witness--1" class="rounded-circle" />
+                <div class="testimony__body">
+                  <blockquote class="text-dark fs-6"> "El restaurante tiene un ambiente que permite disfrutar tanto de
+                    la estadía como de la comida. En cuanto a esta última, han habido pocos manjares que me hayan
+                    satisfecho tanto".</blockquote>
+                  <p class="text-warning fw-bold">-Gordon Ramsay</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 d-none col-md-6 d-md-block">
+              <article id="testimony--2"
+                class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 h-100">
+                <img src="./assets/witness--img-2.jpg" alt="img--witness--2" class="rounded-circle" />
+                <div class="testimony__body">
+                  <blockquote class="text-dark fs-6"> "Si en el cielo me concedieran la posibilidad de comer la comida
+                    que yo quisiera en ese instante, eligiría la Big Rapi"</blockquote>
+                  <p class="text-warning fw-bold">-Ayn Rand</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row mx-auto ">
+            <div class="col-12 col-md-6">
+              <article id="testimony--1"
+                class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 h-100">
+                <img src="./assets/witness--img-3.jpg" alt="img--witness--3" class="rounded-circle" />
+                <div class="testimony__body">
+                  <blockquote class="text-dark fs-6"> "Aún no llego a comprender que clase de magia utilizan los
+                    cocineros de este lugar para producir semejante obra maestra".
+                  </blockquote>
+                  <p class="text-warning fw-bold">-Woody Allen</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 d-none col-md-6 d-md-block">
+              <article id="testimony--1"
+                class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 h-100">
+                <img src="./assets/witness--img-4.jpg" alt="img--witness--4" class="rounded-circle" />
+                <div class="testimony__body">
+                  <blockquote class="text-dark fs-6"> "Este lugar, junto al personal y la comida, me han dejado
+                    fascinado, y estuve pensando en concurrirlo todos los fines de semana".</blockquote>
+                  <p class="text-warning fw-bold">-Roberto Musso</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="stats d-flex justify-content-around w-100 py-5 text-center">
+        <div>
+          <h1 class="text-light">14k</h1>
+          <p class="text-warning fw-bold">Locales</p>
+        </div>
+        <div>
+          <h1 class="text-light">70</h1>
+          <p class="text-warning fw-bold">Países</p>
+        </div>
+        <div>
+          <h1 class="text-light">92</h1>
+          <p class="text-warning fw-bold">Años</p>
+        </div>
+      </section>
     </div>
-    <section class="ubication px-3 px-sm-5 py-5 w-100 d-flex flex-column flex-lg-row gap-5 justify-content-lg-around">
-      <section class="text-center text-lg-start">
-        <h1 class="fs-1">Locales</h1>
-        <h2 class="my-4 fs-5">Encontrá los locales más cercanos a tu ubicación</h2>
-        <input type="text" placeholder="Ciudad o direccion" class="input rounded-2 px-2 py-1 my-4">
-      </section>
-      <section class="d-none d-md-block mx-auto mx-lg-0">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d410.5159378486927!2d-58.44036931857559!3d-34.60093723207207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1674298206316!5m2!1ses!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-    </section>
-    <section class="testimonies--container px-3 px-sm-5">
-      <section class="testimonies d-grid overflow-hidden py-5 gap-5 mx-auto">
-        <div class="row mx-auto ">
-          <div class="col-12 col-md-6">
-            <article id="testimony--1"
-              class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 bg-body-secondary p-4 h-100">
-              <img src="./assets/witness--img-1.jpg" alt="img--witness--1" class="rounded-circle" />
-              <div class="testimony__body">
-                <blockquote class="text-dark fs-6"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quod
-                  obcaecati et consequatur vitae ex est non voluptatibus tempora esse".</blockquote>
-                <p class="text-warning fw-bold">-Gordon Ramsay</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 d-none col-md-6 d-md-block">
-            <article id="testimony--2"
-              class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 bg-body-secondary p-4 h-100">
-              <img src="./assets/witness--img-2.jpg" alt="img--witness--2" class="rounded-circle" />
-              <div class="testimony__body">
-                <blockquote class="text-dark fs-6"> "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
-                  illo facilis
-                  suscipit at saepe rem eum nisi quasi laboriosam necessitatibus!"</blockquote>
-                <p class="text-warning fw-bold">-Chef 2</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="row mx-auto ">
-          <div class="col-12 col-md-6">
-            <article id="testimony--1"
-              class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 bg-body-secondary h-100">
-              <img src="./assets/witness--img-3.jpg" alt="img--witness--3" class="rounded-circle" />
-              <div class="testimony__body">
-                <blockquote class="text-dark fs-6"> "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-                  numquam
-                  repellat? Facere quam eos voluptas explicabo blanditiis reprehenderit necessitatibus ratione?"
-                </blockquote>
-                <p class="text-warning fw-bold">-Chef 3</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-12 d-none col-md-6 d-md-block">
-            <article id="testimony--1"
-              class="testimony d-flex align-items-center gap-5 flex-column flex-lg-row rounded-5 p-4 bg-body-secondary h-100">
-              <img src="./assets/witness--img-4.jpg" alt="img--witness--4" class="rounded-circle" />
-              <div class="testimony__body">
-                <blockquote class="text-dark fs-6"> "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ut
-                  rem veniam
-                  odio blanditiis dolorem iure delectus aut perspiciatis esse".</blockquote>
-                <p class="text-warning fw-bold">-Chef 4</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section class="stats d-flex justify-content-around w-100 py-5 text-center">
-      <div>
-        <h1 class="text-light">14k</h1>
-        <p class="text-warning fw-bold">Locales</p>
-      </div>
-      <div>
-        <h1 class="text-light">70</h1>
-        <p class="text-warning fw-bold">Países</p>
-      </div>
-      <div>
-        <h1 class="text-light">92</h1>
-        <p class="text-warning fw-bold">Años</p>
-      </div>
-    </section>
-    <footer class="w-100">
-      <section class="social_media d-flex flex-column align-items-center">
-        <ul class="social_media__links d-flex justify-content-center">
-          <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
-              class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-              href="facebook.com">@rapifoodArgentina</a></li>
-          <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
-              class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-              href="twitter.com">@rapifoodArgentina</a></li>
-          <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
-              class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-              href="instagram.com">@rapifoodargentina</a></li>
-          <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
-              class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-              href="youtube.com">@rapifoodArgentina</a></li>
-        </ul>
-      </section>
-      <hr class="w-75 text-white mx-auto py-2">
-      <section class="download d-flex align-items-center justify-content-around">
-        <img src="./assets/availableontheappstore.png" alt="IOS download">
-        <img src=" ./assets/downloadggleplay.png" alt="Android download">
-      </section>
-      <hr class="w-75 text-white mx-auto py-2">
-      <section class="d-flex justify-content-around align-items-baseline">
-        <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
-          <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
-          <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
-          <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
-        </ul>
-      </section>
-    </footer>
   </main>
+  <footer class="w-100">
+    <section class="social_media d-flex flex-column align-items-center">
+      <ul class="social_media__links d-flex justify-content-center">
+        <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="facebook.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="twitter.com">@rapifoodArgentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="instagram.com">@rapifoodargentina</a></li>
+        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
+            href="youtube.com">@rapifoodArgentina</a></li>
+      </ul>
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <h1 class="text-center fw-bold download--advise">Descargá la app</h1>
+    <section class="download d-flex align-items-center justify-content-around">
+      <img src="./assets/availableontheappstore.png" alt="IOS download">
+      <img src=" ./assets/downloadggleplay.png" alt="Android download">
+    </section>
+    <hr class="w-75 text-white mx-auto py-2">
+    <section class="d-flex justify-content-around align-items-baseline">
+      <ul class="footer__nav text-center d-md-flex justify-content-md-center gap-5">
+        <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+        <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+      </ul>
+    </section>
+  </footer>
 
   <!-- BOOTSTRAP SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

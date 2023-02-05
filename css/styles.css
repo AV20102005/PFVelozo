@@ -1,0 +1,136 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+body {
+  width: fit-content;
+  height: fit-content; }
+
+ul {
+  list-style: none; }
+
+footer {
+  background-color: maroon; }
+
+.footer__nav {
+  padding-left: 0px; }
+
+.footer__nav li a {
+  font-size: small;
+  color: blanchedalmond;
+  text-decoration: none; }
+
+.download--advise {
+  color: blanchedalmond; }
+
+.download img {
+  width: 20%; }
+
+header .navbar {
+  background-color: orangered; }
+
+.nav__menu__item__link {
+  color: white; }
+
+.navbar--logo {
+  width: 3em; }
+
+.offcanvas--logo {
+  width: 10em; }
+
+.current {
+  border-bottom: 2px solid black; }
+
+.nvbar--social_media__links {
+  padding-left: 0px; }
+
+.main__content {
+  background-image: url("../assets/index_bg-3.jpg");
+  background-attachment: fixed; }
+
+.carousel {
+  min-width: 500px;
+  transition: 1s all; }
+
+.carousel-caption button {
+  width: 25%; }
+
+.ubication {
+  background-color: firebrick; }
+
+.ubication input::placeholder {
+  font-weight: bolder;
+  color: rgba(160, 81, 45, 0.678);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.ubication input:focus {
+  outline: none;
+  border: none; }
+
+.ubication input {
+  font-weight: bold;
+  color: maroon; }
+
+.testimonies--container {
+  background-color: tomato; }
+
+.testimony {
+  color: black;
+  background-color: blanchedalmond; }
+
+.testimony p {
+  color: black; }
+
+.testimony img {
+  max-width: 10%;
+  min-width: 100px; }
+
+.stats {
+  background-color: brown; }
+
+.card {
+  height: fit-content; }
+
+.form--container {
+  width: 50%; }
+
+.advise h2 {
+  line-height: 1.5em; }
+
+@media all and (min-width: 992px) {
+  .carousel {
+    width: 75%; }
+  .testimony img {
+    width: 25%; }
+  .download img {
+    width: 10%; }
+  .main--card__image {
+    width: 100%;
+    height: auto; }
+  .card--group {
+    width: 80%; } }
+
+@media all and (max-width: 1200px) {
+  .social_media__links {
+    padding-left: 0px; }
+  .social_media__links li i {
+    font-size: 25px; } }
+
+@media all and (min-width: 1400px) {
+  .testimonies {
+    width: 80%; } }
+
+@media all and (max-width: 762px) {
+  .carousel--container {
+    width: 100%; }
+  .download img {
+    width: 30%; }
+  .form--container {
+    width: 85%; } }
+
+@media all and (max-width: 440px) {
+  .carousel {
+    box-shadow: 0px 2px 10px 2px #333333; }
+  .carousel-caption button {
+    width: fit-content; } }

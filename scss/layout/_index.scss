@@ -1,0 +1,55 @@
+.main__content {
+    background-image: url('../assets/index_bg-3.jpg');
+    background-attachment: fixed;
+}
+
+.carousel {
+    min-width: 500px;
+    transition: 1s all;
+}
+
+.carousel-caption button {
+    width: 25%; 
+}
+
+.ubication {
+    background-color:firebrick;
+}
+
+.ubication input::placeholder {
+    font-weight: bolder;
+    color: rgba(160, 81, 45, 0.678);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ubication input:focus {
+    outline: none;
+    border: none;
+}
+
+.ubication input {
+    font-weight: bold;
+    color:maroon;
+}
+
+.testimonies--container {
+    background-color: tomato;
+}
+
+.testimony {
+    color: black;
+    background-color :blanchedalmond;
+}
+
+.testimony p {
+    color: black;
+}
+
+.testimony img {
+    max-width: 10%;
+    min-width: 100px;
+}
+
+.stats {
+    background-color:brown;
+}

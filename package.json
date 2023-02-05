@@ -1,0 +1,23 @@
+{
+  "name": "rapifood",
+  "version": "1.0.0",
+  "description": "'Rapifood website'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss ./scss/styles.scss ./css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AV20102005/rapifood-website.git"
+  },
+  "author": "'A.V'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AV20102005/rapifood-website/issues"
+  },
+  "homepage": "https://github.com/AV20102005/rapifood-website#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
