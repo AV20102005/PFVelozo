@@ -59,6 +59,20 @@ header .navbar {
 .ubication {
   background-color: firebrick; }
 
+.news__container {
+  background-color: chocolate; }
+
+.news__galery div img {
+  width: 100%; }
+
+.news__galery div img:hover {
+  transition: 0.3s all;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 1px #272727; }
+
+.news__galery div h6 {
+  color: maroon; }
+
 .ubication input::placeholder {
   font-weight: bolder;
   color: rgba(160, 81, 45, 0.678);
@@ -117,6 +131,10 @@ header .navbar {
   .social_media__links li i {
     font-size: 25px; } }
 
+@media all and (min-width: 1200px) {
+  .news {
+    width: 75%; } }
+
 @media all and (min-width: 1400px) {
   .testimonies {
     width: 80%; } }
@@ -127,7 +145,13 @@ header .navbar {
   .download img {
     width: 30%; }
   .form--container {
-    width: 85%; } }
+    width: 85%; }
+  .news__galery div:nth-child(n+3) {
+    display: none; } }
+
+@media all and (min-width: 992px) {
+  .news__galery div h2 {
+    font-size: 1.2em; } }
 
 @media all and (max-width: 440px) {
   .carousel {

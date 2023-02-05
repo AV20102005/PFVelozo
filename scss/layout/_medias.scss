@@ -33,6 +33,12 @@
     }
 }
 
+@media all and (min-width: 1200px) {
+    .news {
+        width: 75%;
+    }
+}
+
 @media all and (min-width: 1400px) {
     .testimonies {
         width: 80%;
@@ -50,6 +56,16 @@
 
     .form--container {
         width: 85%;
+    }
+
+    .news__galery  div:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media all and (min-width:992px) {
+    .news__galery div h2 {
+        font-size: 1.2em;
     }
 }
 
