@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Mitr:wght@300&display=swap');
-
 header .navbar {
     background-color:orangered;
     font-family: $navbar--font;
-}
 
-.nav__menu__item__link {
-    color: white;
-}
+    &__nav {
+        @include flex(row, start, start, 2em)
+    }
 
-.navbar--logo {
-    width: 3em;
+    &--logo {
+        width: 3em;
+    }
+
+    &__nav__item__link {
+        color: white;
+    }
 }
 
 .offcanvas--logo {
     width: 10em;
 }
 
-.current {
+.offcanvas__menu__current {
     border-bottom: 2px solid black;
 }
 
-.nvbar--social_media__links {
+.offcanvas__menu__social--media {
     padding-left: 0px;
+    @include flex(row, start, start, 2em)
 }

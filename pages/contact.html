@@ -24,25 +24,25 @@
   <title>Contacto | Rapifood</title>
 </head>
 
-<body class="d-flex flex-column justify-content-center w-100">
-  <header class="d-flex justify-content-center">
+<body class=" flex-column  w-100">
+  <header>
     <nav class="navbar navbar-expand-lg position-fixed z-3 w-100">
-      <div class="container-fluid d-flex justify-content-between flex-nowrap">
+      <div class="container-fluid   flex-nowrap">
         <a href="../index.html"><img class="navbar--logo me-4" src="../assets/rapifood_logo.png" alt="Bootstrap"></a>
         <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
+          <ul class="navbar__nav   me-auto mb-lg-0">
+            <li class="navbar__nav__item">
+              <a class="nav-link font  navbar__nav__item__link" aria-offcanvas__menu__current="page" href="../index.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav__menu__item__link" href="./about.html">Nosotros</a>
+            <li class="navbar__nav__item">
+              <a class="nav-link navbar__nav__item__link" href="./about.html">Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav__menu__item__link" href="#">Contacto</a>
+            <li class="navbar__nav__item">
+              <a class="nav-link navbar__nav__item__link" href="#">Contacto</a>
             </li>
           </ul>
         </div>
@@ -57,13 +57,13 @@
           <img src="../assets/rapifood_logo.png" class="offcanvas--logo" alt="offcanvas--logo">
         </div>
         <ul class="mt-5 offcanvas__menu">
-          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5"
-              href="../index.html">Productos</a></li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="../index.html">Productos</a>
+          </li>
           <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./about.html">Nosotros</a>
           </li>
-          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Contacto</a></li>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 offcanvas__menu__current" href="#">Contacto</a></li>
         </ul>
-        <ul class="nvbar--social_media__links mt-5  d-flex gap-4">
+        <ul class="offcanvas__menu__social--media mt-5   ">
           <li></li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook pe-xl-3 fs-1 text-dark"></i></a>
           </li>
           <li><a href="https://www.twitter.com"><i class="fa-brands fa-twitter  pe-xl-3 fs-1 text-dark"></i></a></li>
@@ -76,7 +76,9 @@
   <main class="d-flex flex-column align-items-center p-1 p-sm-5 my-5">
     <h1 class="main__title fw-bolder my-5 my-sm-5"> CONTACTO </h1>
     <section class="advise w-75 text-center my-0 my-lg-4">
-      <h2 class="d-none fs-6 fs-lg-5 w-75 mx-auto d-sm-block"> En Rapifood, tenemos en cuenta las opiniones de nuestros clientes para siempre mejorar como compañía, por eso te animamos a ponerte en contacto con nosotros para que nos cuentes tu experiencia.</h2>
+      <h2 class="d-none fs-4 fs-lg-5 w-75 mx-auto d-sm-block"> En Rapifood, tenemos en cuenta las opiniones de nuestros
+        clientes para siempre mejorar como compañía, por eso te animamos a ponerte en contacto con nosotros para que nos
+        cuentes tu experiencia.</h2>
     </section>
     <form class="form--container bg-light my-3 my-lg-5 p-2 p-sm-5">
       <div class="input-group mb-3">
@@ -148,34 +150,36 @@
     </form>
   </main>
   <footer class="w-100">
-    <section class="social_media d-flex flex-column align-items-center">
-      <ul class="social_media__links d-flex justify-content-center">
-        <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+    <section class="social--media">
+      <ul class="social--media__links">
+        <li class="social--media__links__link px-3 py-5 px-xl-5"><i
             class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-            href="https://www.facebook.com">@rapifoodArgentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+            href="facebook.com">@rapifoodArgentina</a></li>
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-            href="https://www.twitter.com">@rapifoodArgentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            href="twitter.com">@rapifoodArgentina</a></li>
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-            href="https://www.instagram.com">@rapifoodargentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+            href="instagram.com">@rapifoodargentina</a></li>
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
-            href="https://www.youtube.com">@rapifoodArgentina</a></li>
+            href="youtube.com">@rapifoodArgentina</a></li>
       </ul>
     </section>
     <hr class="w-75 text-white mx-auto py-2">
-    <h1 class="text-center fw-bold download--advise">Descargá la app</h1>
-    <section class="download d-flex align-items-center justify-content-around">
+    <section class="download--advise">
+    <h2 class="text-center fw-bold">Descargá la app</h2>
+    <section class="download--advise__links">
       <img src="../assets/availableontheappstore.png" alt="IOS download">
       <img src=" ../assets/downloadggleplay.png" alt="Android download">
     </section>
+    </section>
     <hr class="w-75 text-white mx-auto py-2">
-    <section class="d-flex justify-content-around align-items-baseline">
-      <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
-        <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
-        <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
-        <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+    <section class="footer__nav">
+      <ul class="footer__nav__menu text-center flex-md-row gap-md-5">
+        <li class="my-1 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+        <li class="my-1 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+        <li class="my-1 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
       </ul>
     </section>
   </footer>

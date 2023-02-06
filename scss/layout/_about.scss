@@ -1,3 +1,10 @@
 .card {
-    height: fit-content;
+    @include size(100%, 100%);
+
+    &__main {
+        @extend .card;
+        margin-top: 3.5em;
+    }
 }
+
+

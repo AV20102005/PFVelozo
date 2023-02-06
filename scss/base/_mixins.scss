@@ -1,0 +1,16 @@
+@mixin flex($direction, $justify-content, $align-items, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin size($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@mixin shadow($X, $Y, $blur, $spread-radius, $color) {
+    box-shadow: $X $Y $blur $spread-radius $color;
+}

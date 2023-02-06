@@ -1,22 +1,50 @@
 footer {
     background-color:maroon;
+
+    .social--media {
+        @include flex(column, start, center, 0px);
+
+        &__links {
+            @include flex(row, center, start, 0px);
+
+            &__link {
+                @include flex (row, center, center, 0px);
+            }
+        }
+
+    }
+
+    .footer__nav {
+        @include flex(row, space-around, baseline, 0px);
+        ul {
+            padding-left: 0px;
+            @include flex(column, center, center, 0.5em);
+         li {
+            a {
+                font-size: small;
+                color: blanchedalmond;
+                text-decoration: none; 
+            }
+        }
+        }
+    }
+
+    .download--advise {
+        h2 {
+            color: blanchedalmond;
+        }
+    
+        &__links {
+            @include flex(row, space-around, center, 0px);
+            img {
+                width: 25%;
+                max-width: 150px;
+                @include flex(row, space-around, center, 0px)
+            }
+        }
+    
+    }
 }
 
 
-.footer__nav {
-    padding-left: 0px;
-}
 
-.footer__nav li a {
-    font-size: small;
-    color: blanchedalmond;
-    text-decoration: none;
-}
-
-.download--advise {
-    color: blanchedalmond;
-}
-
-.download img {
-    width: 20%;
-}

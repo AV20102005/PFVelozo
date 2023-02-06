@@ -24,25 +24,26 @@
   <title>Nosotros | Rapifood</title>
 </head>
 
-<body class="d-flex flex-column justify-content-center w-100">
-  <header class="d-flex justify-content-center">
+<body class="w-100">
+  <header class=" ">
     <nav class="navbar navbar-expand-lg w-100 position-fixed z-3">
-      <div class="container-fluid d-flex justify-content-between flex-nowrap">
+      <div class="container-fluid   flex-nowrap">
         <a href="../index.html"><img class="navbar--logo me-4" src="../assets/rapifood_logo.png" alt="Bootstrap"></a>
         <button class="navbar-toggler rounded-5" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link font  nav__menu__item__link" aria-current="page" href="../index.html">Productos</a>
+          <ul class="navbar__nav   me-auto mb-lg-0">
+            <li class="navbar__nav__item">
+              <a class="nav-link font  navbar__nav__item__link" aria-offcanvas__menu__current="page"
+                href="../index.html">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav__menu__item__link" href="#">Nosotros</a>
+            <li class="navbar__nav__item">
+              <a class="nav-link navbar__nav__item__link" href="#">Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav__menu__item__link" href="./contact.html">Contacto</a>
+            <li class="navbar__nav__item">
+              <a class="nav-link navbar__nav__item__link" href="./contact.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -59,12 +60,13 @@
         <ul class="mt-5 offcanvas__menu">
           <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="../index.html">Productos</a>
           </li>
-          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 current" href="#">Nosotros</a>
+          <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5 offcanvas__menu__current"
+              href="#">Nosotros</a>
           </li>
           <li class="mt-4"><a class="text-decoration-none text-dark fw-bold fs-5" href="./contact.html">Contacto</a>
           </li>
         </ul>
-        <ul class="nvbar--social_media__links mt-5  d-flex gap-4">
+        <ul class="offcanvas__menu__social--media mt-5   ">
           <li></li><a href=""><i class="fa-brands fa-facebook pe-xl-3 fs-1 text-dark"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-twitter  pe-xl-3 fs-1 text-dark"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-instagram pe-xl-3 fs-1 text-dark"></i></a></li>
@@ -73,41 +75,44 @@
       </div>
     </div>
   </header>
-  <main class="d-flex flex-column align-items-center my-5 my-md-0">
-    <section class="card--group px-3 px-lg-5">
-      <div class="card my-5">
+  <main class="my-5 my-md-0">
+    <section class="card--group mx-auto px-3 px-lg-5">
+      <div class="card__main card">
         <img src="../assets/restaurant__img.jpg" class="card-img-top main--card__image img-fluid" alt="main card image">
         <div class="card-img-overlay">
           <h1 class="my-1 text-light fw-bolder ms-2 d-none d-md-block">Nosotros</h1>
         </div>
         <div class="card-body text-center">
-          <p class="fs-4"> En Rapifood, sabemos que es importante mantener una cultura organizacional funcional para el buen desempeño laboral</p>
+          <p class="fs-4"> En Rapifood, sabemos que es importante mantener una cultura organizacional funcional para el
+            buen desempeño laboral</p>
         </div>
       </div>
-      <section class="d-grid gap-4 my-5">
-        <div class="row gap-4 gap-lg-0">
-          <div class="col col-12 col-lg-6">
-            <div class="card w-100 h-100">
+      <section class="d-grid  my-5">
+        <div class="row  gap-lg-0">
+          <div class="col col-12 col-lg-6 my-3">
+            <div class="card">
               <img src="../assets/about_img--1.jpg" class="card-img-top img-fluid" alt="card image 1">
               <div class="card-body">
-                <p>Un gran proceso de estudio y preocupación por nuestros compradores está detrás de todos nuestros productos</p>
+                <p>Un gran proceso de estudio y preocupación por nuestros compradores está detrás de todos nuestros
+                  productos</p>
               </div>
               <button class="btn btn-warning px-5 my-3 text-nowrap mx-auto">Quiero informarme</button>
             </div>
           </div>
-          <div class="col col-12 col-lg-6">
-            <div class="card w-100 h-100">
+          <div class="col col-12 col-lg-6 my-3">
+            <div class="card">
               <img src="../assets/about_img--2.jpg" class="card-img-top img-fluid" alt="card image 2">
               <div class="card-body">
-                <p>En Rapifood, nos gusta tener siempre conocimiento de nuestro cliente, para proporcionarle el servicio de calidad que merece.</p>
+                <p>En Rapifood, nos gusta tener siempre conocimiento de nuestro cliente, para proporcionarle el servicio
+                  de calidad que merece.</p>
               </div>
               <button class="btn btn-warning px-5 my-3 text-nowrap mx-auto">Quiero saber más</button>
             </div>
           </div>
         </div>
-        <div class="row gap-4 gap-lg-0">
-          <div class="col-12 col-lg-6">
-            <div class="card h-100">
+        <div class="row my-3 gap-lg-0">
+          <div class="col-12 col-lg-6 my-3">
+            <div class="card">
               <img src="../assets/about_img--3.jpg" class="card-img-top img-fluid" alt="card image 3">
               <div class="card-body">
                 <p>Visita nuestro podcast para enterarte de las últimas noticias de Rapifood.</p>
@@ -115,11 +120,12 @@
               <button class="btn btn-warning px-5 my-3 text-nowrap mx-auto">Visitar</button>
             </div>
           </div>
-          <div class="col col-lg-6">
-            <div class="card h-100">
+          <div class="col col-lg-6 my-3">
+            <div class="card">
               <img src="../assets/about_img--4.jpg" class="card-img-top img-fluid" alt="card image 4">
               <div class="card-body">
-                <p>Deseamos que todos nuestos trabajadores se sientan cómodos y nos encargamos de que cumplan con las expectativas propuestas.</p>
+                <p>Deseamos que todos nuestos trabajadores se sientan cómodos y nos encargamos de que cumplan con las
+                  expectativas propuestas.</p>
               </div>
               <button class="btn btn-warning px-5 my-3 text-nowrap mx-auto">Ver más</button>
             </div>
@@ -129,41 +135,44 @@
     </section>
   </main>
   <footer class="w-100">
-    <section class="social_media d-flex flex-column align-items-center">
-      <ul class="social_media__links d-flex justify-content-center">
-        <li class="px-3 py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+    <section class="social--media">
+      <ul class="social--media__links">
+        <li class="social--media__links__link px-3 py-5 px-xl-5"><i
             class="fa-brands fa-facebook pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
             href="facebook.com">@rapifoodArgentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center justify-content-center px-xl-5"><i
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-twitter  pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
             href="twitter.com">@rapifoodArgentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-instagram pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
             href="instagram.com">@rapifoodargentina</a></li>
-        <li class="px-3  py-5 d-flex align-items-center  justify-content-center px-xl-5"><i
+        <li class="social--media__links__link px-3  py-5 px-xl-5"><i
             class="fa-brands fa-youtube pe-xl-3"></i><a class="text-decoration-none text-dark d-none d-xl-block"
             href="youtube.com">@rapifoodArgentina</a></li>
       </ul>
     </section>
     <hr class="w-75 text-white mx-auto py-2">
-    <h1 class="text-center fw-bold download--advise">Descargá la app</h1>
-    <section class="download d-flex align-items-center justify-content-around">
-      <img src="../assets/availableontheappstore.png" alt="IOS download"">
-            <img src=" ../assets/downloadggleplay.png" alt="Android download">
+    <section class="download--advise">
+    <h2 class="text-center fw-bold">Descargá la app</h2>
+    <section class="download--advise__links">
+      <img src="../assets/availableontheappstore.png" alt="IOS download">
+      <img src=" ../assets/downloadggleplay.png" alt="Android download">
+    </section>
     </section>
     <hr class="w-75 text-white mx-auto py-2">
-    <section class="d-flex justify-content-around align-items-baseline">
-      <ul class="footer__nav text-center d-md-flex justify-content-md-center  gap-5">
-        <li class="my-4 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
-        <li class="my-4 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
-        <li class="my-4 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
+    <section class="footer__nav">
+      <ul class="footer__nav__menu text-center flex-md-row gap-md-5">
+        <li class="my-1 my-md-0"><a href="./pages/privacypolitics.html">Politica de privacidad</a></li>
+        <li class="my-1 my-md-0"><a href="./pages/consumerdefense.html">Defensa del consumidor</a></li>
+        <li class="my-1 my-md-0"><a href="./pages/personaldataprotec.html">Protección de datos personales</a></li>
       </ul>
     </section>
   </footer>
 
   <!-- BOOTSTRAP SCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
