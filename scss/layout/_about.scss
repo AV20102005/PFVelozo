@@ -1,4 +1,7 @@
+
+
 .card {
+    font-family: $card--font;
     @include size(100%, 100%);
 
     &__main {

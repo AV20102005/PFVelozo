@@ -25,10 +25,10 @@
     background-color: $news__container--color;
 
 .news {
-    @include flex(column, center, center, 3em);
+    @include flex(column, center, center, 1em);
 
     &__header {
-        @include flex(column, space-between, start, 0px)
+        @include flex(column, space-between, start, 0.5em)
     }
 
     &__galery {
