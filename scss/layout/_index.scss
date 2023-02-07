@@ -21,12 +21,11 @@
 
 .news__container {
 
-
     @include flex(row, center, start, 0px);
     background-color: chocolate;
 
 .news {
-    @include flex(column, center, center, 4em);
+    @include flex(column, center, center, 3em);
 
     &__header {
         @include flex(column, space-between, start, 0px)

@@ -139,7 +139,7 @@ header .navbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4em; }
+    gap: 3em; }
     .news__container .news__header {
       display: flex;
       flex-direction: column;
