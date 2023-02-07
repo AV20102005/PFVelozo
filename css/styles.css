@@ -79,7 +79,7 @@ footer {
       gap: 0px; }
 
 header .navbar {
-  background-color: orangered;
+  background-color: #f67418;
   font-family: "Mitr"; }
   header .navbar__nav {
     display: flex;
@@ -133,7 +133,7 @@ header .navbar {
   justify-content: center;
   align-items: start;
   gap: 0px;
-  background-color: chocolate; }
+  background-color: #dba00d; }
   .news__container .news {
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@ header .navbar {
           color: maroon; }
 
 .ubication {
-  background-color: firebrick;
+  background-color: #b03939;
   display: flex;
   flex-direction: column;
   justify-content: start;
